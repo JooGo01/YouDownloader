@@ -1,5 +1,5 @@
 //GETTING VIDEO DATA
-const host="http://localhost:5000/";
+const host="http://localhost:3000/";
 
 function getVideoInfo(){
 

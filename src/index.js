@@ -7,7 +7,7 @@ const ytdl = require("ytdl-core");
 
 //settings
 
-app.set('port', 5000);
+app.set('port', 3000);
 app.set('views', path.join(__dirname, 'view'));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
