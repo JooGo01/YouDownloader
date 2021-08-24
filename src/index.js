@@ -4,6 +4,7 @@ const express= require('express');
 const app=express();
 const path = require('path');
 const ytdl = require("ytdl-core");
+const cors = require('cors');
 
 //settings
 
