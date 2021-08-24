@@ -1,5 +1,6 @@
 //GETTING VIDEO DATA
-const host="http://localhost:3000/";
+const host="https://you-downloader.vercel.app/";
+// const hostt="http://localhost:3000/";
 
 function getVideoInfo(){
 
@@ -9,7 +10,7 @@ function getVideoInfo(){
     return;
   }
 
-  fetch(host + "videoInfo?videoURL=" + videoURL)
+  fetch(host + "videoInfo?videoURL=" + videoURL, {mode: 'no-cors'})
   .then(function(response) {
     return response.json();
   })
