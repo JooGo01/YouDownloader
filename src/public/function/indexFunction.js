@@ -9,7 +9,7 @@ function getVideoInfo(){
     return;
   }
 
-  fetch(host + "videoInfo?videoURL=" + videoURL, {mode: 'no-cors'})
+  fetch(host + "videoInfo?videoURL=" + videoURL)
   .then(function(response) {
     return response.json();
   })
