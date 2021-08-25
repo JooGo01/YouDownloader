@@ -1,6 +1,6 @@
 //GETTING VIDEO DATA
-const host="https://you-downloader.vercel.app/";
-// const hostt="http://localhost:3000/";
+const host="http://localhost:3000/";
+
 
 function getVideoInfo(){
 
