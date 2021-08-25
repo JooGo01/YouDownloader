@@ -1,6 +1,5 @@
 //GETTING VIDEO DATA
-const host="http://localhost:3000/";
-
+const host = '0.0.0.0:3000';
 
 function getVideoInfo(){
 
@@ -10,7 +9,7 @@ function getVideoInfo(){
     return;
   }
 
-  fetch(host + "videoInfo?videoURL=" + videoURL, {mode: 'no-cors'})
+  fetch( "videoInfo?videoURL=" + videoURL, {mode: 'no-cors'})
   .then(function(response) {
     return response.json();
   })
@@ -75,7 +74,7 @@ function downloadVideo(){
   let details = document.querySelector("#download-options").value.split("|");
   let itag = details[0];
   let format = details[1];
-  window.open(host + "download?videoURL="+videoURL+"&itag="+itag+"&format="+format);
+  window.open("download?videoURL="+videoURL+"&itag="+itag+"&format="+format);
 };
 
 // ADDING EVENT TO THE BUTTON

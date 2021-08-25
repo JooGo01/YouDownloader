@@ -7,7 +7,7 @@ const ytdl = require("ytdl-core");
 const cors = require('cors');
 //settings
 
-app.set('port', 3000);
+// app.set('port', 3000);
 app.set('views', path.join(__dirname, 'view'));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
@@ -59,7 +59,7 @@ app.use(require('./routes/indexRoute'));
 
 //listening port
 
-app.listen(app.get('port'), () =>
+app.listen(process.env.PORT || 3000, () =>
 {
- console.log('server on port', app.get('port'));    
+ console.log('server on port', process.env.PORT || 3000);    
 });
